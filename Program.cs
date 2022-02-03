@@ -15,6 +15,7 @@ namespace CursoCSharp
                 {"VariaveisEContantes- Fundamnetos",VariaveisEConstantes.Executar},
                 {"Inferencia - Fundamnetos",Inferencia.Executar},
                 {"Interpolação - Fundamnetos",Interpolacao.Executar},
+                {"NotacaoPonto - Fundamnetos",NotacaoPonto.Executar},
             });
 
             central.SelecionarEExecutar();
