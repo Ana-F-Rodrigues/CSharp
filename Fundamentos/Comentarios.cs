@@ -23,7 +23,9 @@ namespace CursoCSharp.Fundamentos
             Console.WriteLine("Comentario de multiplas linhas");
 
             Console.WriteLine("CTRL + U = Descomenta bloco de codigo!");
+
             Console.WriteLine("CTRL + C = Comenta bloco de codigo!");
+            Console.WriteLine("Lembrar de subir todas atualizações para o Git ");
         }
     }
 }
