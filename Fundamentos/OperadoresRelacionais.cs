@@ -18,7 +18,8 @@ namespace CursoCSharp.Fundamentos
             Console.WriteLine("Perfeito? {0}", nota == 10.0); //COMPARAÇÃO
             Console.WriteLine("Tem como melhorar? {0}", nota != 10.0); //DIFERENTE 
             Console.WriteLine("Passou por media? {0}", nota >= notaDeCorte); //MAIOR IGUAL
-            Console.WriteLine("Recuperação {0}", nota >= notaDeCorte); //MAIOR IGUAL
+            Console.WriteLine("Recuperação {0}", nota < notaDeCorte); 
+            Console.WriteLine("Reprovado {0}", nota <= 3.0);
         }
     }
 }
