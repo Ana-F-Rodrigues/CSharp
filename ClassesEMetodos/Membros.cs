@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CursoCSharp.ClassesEMetodos
 {
-  class Membros
+    class Membros
     {
         public static void Executar()
         {
@@ -14,7 +14,9 @@ namespace CursoCSharp.ClassesEMetodos
             sicrano.Nome = "Ana";
             sicrano.Idade = 24;
 
-            Console.WriteLine($"{sicrano.Nome} tem {sicrano.Idade} anos.");
+            // Console.WriteLine($"{sicrano.Nome} tem {sicrano.Idade} anos.");
+
+            sicrano.ApresentarNoConsole();
         }
     }
 }
