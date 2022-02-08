@@ -21,5 +21,11 @@ namespace CursoCSharp.ClassesEMetodos
             Console.WriteLine(Apresentar());
         }
 
+        public void Zerar()
+        {
+            Nome = "";
+            Idade = 0;
+        }
+
     }
 }
