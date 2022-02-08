@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+
 
 namespace CursoCSharp.ClassesEMetodos
 {
@@ -26,6 +24,41 @@ namespace CursoCSharp.ClassesEMetodos
         }
     }
 
+    public class CalculadoraCadeia
+    {
+        int memoria;
+
+        public CalculadoraCadeia Somar(int a)
+        {
+            memoria += a;
+            return this; //retorna a propia instancia
+        }
+
+        public CalculadoraCadeia Multiplicar(int a)
+        {
+            memoria *= a;
+            return this;
+        }
+
+        public CalculadoraCadeia Limpar()
+        {
+            memoria = 0;
+            return this;
+        }
+
+        public CalculadoraCadeia Imprimir()
+        {
+            Console.WriteLine(memoria);
+            return this;
+        }
+
+        public int Resultado()
+        {
+            return memoria;
+        }
+    }
+
+
     class MetodosComRetorno
     {
         public static void Executar()
@@ -34,8 +67,14 @@ namespace CursoCSharp.ClassesEMetodos
             var resultado = calculadoraComum.Somar(5, 5);
 
             Console.WriteLine(resultado);
-            Console.WriteLine(calculadoraComum.Subtrair(2,7));
-            Console.WriteLine(calculadoraComum.Multiplicar(2,2));
+            Console.WriteLine(calculadoraComum.Subtrair(2, 7));
+            Console.WriteLine(calculadoraComum.Multiplicar(2, 2));
+
+            var calculadoraCadeia = new CalculadoraCadeia();
+            calculadoraCadeia.Somar(3).Multiplicar(3).Imprimir().Limpar().Imprimir();
+
+            resultado = calculadoraCadeia.Somar(3).Multiplicar(2).Resultado();
+            Console.WriteLine(resultado);
         }
     }
 }
