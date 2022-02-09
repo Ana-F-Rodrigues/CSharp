@@ -5,6 +5,7 @@ using CursoCSharp.Fundamentos;
 
 using CursoCSharp.EstruturasDeControle;
 using CursoCSharp.ClassesEMetodos;
+using CursoCSharp.OrientacaoObjetos;
 
 namespace CursoCSharp
 {
@@ -46,6 +47,10 @@ namespace CursoCSharp
 
                 //Classes e Metodos
                 {"Membros - Classes e Metodos",Membros.Executar},
+
+                //Orientação a Objeto
+                {"Digito Verificador - Orientação a Objetos",DigitoVerificador.Executar},
+
 
             });
 
