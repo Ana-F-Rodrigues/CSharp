@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Desafio>
+  <Item>
+    <Nome>Ana</Nome>
+    <Descricao>Programadora Excelente</Descricao>
+    <Categoria>C#</Categoria>
+    <Observacao>Será minha melhor aluna</Observacao>
+  </Item>
+  <Item>
+    <Nome></Nome>
+    <Descricao></Descricao>
+    <Categoria></Categoria>
+    <Observacao></Observacao>
+  </Item>
+  <Item>
+    <Nome></Nome>
+    <Descricao></Descricao>
+    <Categoria></Categoria>
+    <Observacao></Observacao>
+  </Item>  
+</Desafio>
