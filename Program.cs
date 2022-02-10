@@ -52,7 +52,7 @@ namespace CursoCSharp
                 //Orientação a Objeto
                 {"Digito Verificador - Orientação a Objetos",DigitoVerificador.Executar},
                 {"ArquivoExcel - Orientação a Objetos",LeitorXml.Executar},
-                {"ArquivoExcel - Orientação a Objetos",EscreverCSV.Executar},
+               
 
 
             });
