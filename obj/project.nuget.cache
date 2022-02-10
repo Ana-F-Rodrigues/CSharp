@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FT4YXe6E/laAJ7f+euJJ31NtSMaYniGibX+nyqn750BoXBe9BNtZMmhvwLkDVdAYmyg2SU3yWhK/WduvzBQbNw==",
+  "dgSpecHash": "kz4JhyTbwmKmbs6BkvlX3LROYoICw8s4/UtF2w8eQrAelHPNjDJkJyTBDIzF87Urw9CiySU6l4bxbjsZj4pEZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ana\\Desktop\\PLANO 2022\\CursoCSharp\\CursoCSharp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ana\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\Ana\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []

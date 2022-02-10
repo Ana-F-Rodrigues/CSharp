@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CsvHelper;
+using System;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace CursoCSharp.IO
@@ -13,24 +12,27 @@ namespace CursoCSharp.IO
         public static void Executar()
         {
 
-            XElement leitorXml = XElement.Load("C:\\Users\\Ana\\Desktop\\PLANO 2022\\CursoCSharp\\IO\\Dados.xml");
+            //XElement leitorXml = XElement.Load("C:\\Users\\Ana\\Desktop\\PLANO 2022\\CursoCSharp\\IO\\Dados.xml");
 
-            string csv = (from tag in leitorXml.Element("Nome").Elements("Nome")
-                          select
-                          String.Format("{0},{1},{2},{3}",
-                          (string)tag.Element("Nome"),
-                          (string)tag.Element("Descrição"),
-                          (string)tag.Element("Categoria"),
-                          (string)tag.Element("Observação"),
-                          Environment.NewLine
-                          )
-                        )
-                          .Aggregate(
-                             new StringBuilder(),
-                             (sb, s) => sb.Append(s),
-                             sb => sb.ToString());
+            //string csv = (from tag in leitorXml.Element("Nome").Elements("Nome")
+            //              select
+            //              String.Format("{0},{1},{2},{3}",
+            //              (string)tag.Element("Nome"),
+            //              (string)tag.Element("Descrição"),
+            //              (string)tag.Element("Categoria"),
+            //              (string)tag.Element("Observação"),
+            //              Environment.NewLine
+            //              )
+            //            )
+            //              .Aggregate(
+            //                 new StringBuilder(),
+            //                 (sb, s) => sb.Append(s),
+            //                 sb => sb.ToString());
 
-            Console.WriteLine(csv);
+
+            //Console.WriteLine(csv);
+
+         
 
 
         }
