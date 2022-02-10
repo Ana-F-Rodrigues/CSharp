@@ -7,15 +7,15 @@
     <Observacao>Será minha melhor aluna</Observacao>
   </Item>
   <Item>
-    <Nome></Nome>
-    <Descricao></Descricao>
-    <Categoria></Categoria>
-    <Observacao></Observacao>
+    <Nome>Joao</Nome>
+    <Descricao>Joao se encontra confuso</Descricao>
+    <Categoria>Vida</Categoria>
+    <Observacao>Joao precisa de uma direção</Observacao>
   </Item>
   <Item>
-    <Nome></Nome>
-    <Descricao></Descricao>
-    <Categoria></Categoria>
-    <Observacao></Observacao>
+    <Nome>Maria</Nome>
+    <Descricao>Maria duvida de sua capacidade</Descricao>
+    <Categoria>Emprego</Categoria>
+    <Observacao>Maria precisa de terapia</Observacao>
   </Item>  
 </Desafio>

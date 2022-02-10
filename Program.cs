@@ -6,6 +6,7 @@ using CursoCSharp.Fundamentos;
 using CursoCSharp.EstruturasDeControle;
 using CursoCSharp.ClassesEMetodos;
 using CursoCSharp.OrientacaoObjetos;
+using CursoCSharp.IO;
 
 namespace CursoCSharp
 {
@@ -50,6 +51,8 @@ namespace CursoCSharp
 
                 //Orientação a Objeto
                 {"Digito Verificador - Orientação a Objetos",DigitoVerificador.Executar},
+                {"ArquivoExcel - Orientação a Objetos",LeitorXml.Executar},
+                {"ArquivoExcel - Orientação a Objetos",EscreverCSV.Executar},
 
 
             });
