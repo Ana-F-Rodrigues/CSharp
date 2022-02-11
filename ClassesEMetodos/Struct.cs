@@ -46,6 +46,7 @@ namespace CursoCSharp.ClassesEMetodos
             Console.WriteLine("X = {0}", coordenadFinal.X);
             Console.WriteLine("Y = {0}", coordenadFinal.Y);
             Console.WriteLine();
+            Console.WriteLine();
 
         }
     }
