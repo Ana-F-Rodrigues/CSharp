@@ -3,6 +3,7 @@ using System;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
+using System.IO;
 
 namespace CursoCSharp.IO
 {
@@ -11,29 +12,23 @@ namespace CursoCSharp.IO
 
         public static void Executar()
         {
+            //StrinBuilder = usada para modificar uma cadeia de caracteres sem criar um novo objeto.
+            // Descendants = Retorna uma coleção dos elementos descendentes desse documento ou elemento, na ordem do documento.
+            // Append = Cria um StreamWriter que acrescenta um texto codificado para UTF-8 a um arquivo existente ou a um novo arquivo, se o arquivo especificado não existe.
+            StringBuilder sb = new StringBuilder();
+            string delimiter = ",";
 
-            //XElement leitorXml = XElement.Load("C:\\Users\\Ana\\Desktop\\PLANO 2022\\CursoCSharp\\IO\\Dados.xml");
+            XDocument.Load(@"C:\Users\Ana\Desktop\PLANO 2022\CursoCSharp\IO\Dados.xml").Descendants("Desafio").ToList().ForEach(
+              element => 
+              sb.Append(element.Attribute("Item").Value + delimiter +
+                                    element.Element("Nome").Value + delimiter +
+                                    element.Element("Descrição").Value + delimiter +
+                                    element.Element("Categoria").Value + delimiter +
+                                    element.Element("Observação").Value + "\r\n"));
 
-            //string csv = (from tag in leitorXml.Element("Nome").Elements("Nome")
-            //              select
-            //              String.Format("{0},{1},{2},{3}",
-            //              (string)tag.Element("Nome"),
-            //              (string)tag.Element("Descrição"),
-            //              (string)tag.Element("Categoria"),
-            //              (string)tag.Element("Observação"),
-            //              Environment.NewLine
-            //              )
-            //            )
-            //              .Aggregate(
-            //                 new StringBuilder(),
-            //                 (sb, s) => sb.Append(s),
-            //                 sb => sb.ToString());
-
-
-            //Console.WriteLine(csv);
-
-
-
+            StreamWriter sw = new StreamWriter(@"C:\Users\Ana\Desktop\PLANO 2022\CursoCSharp\IO\Dados.csv");
+            sw.WriteLine(sb.ToString());
+            sw.Close();
 
         }
     }
