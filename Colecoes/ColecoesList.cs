@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CursoCSharp.Colecoes
 {
-    public class Produto 
+    public class Produto
     {
         public string Nome;
         public double Preco;
@@ -16,9 +16,21 @@ namespace CursoCSharp.Colecoes
             Nome = nome;
             Preco = preco;
         }
+        public override bool Equals(object obj) // compara em termos de valores
+        {
+            Produto outroproduto = (Produto)obj;
+            bool mesmonome = this.Nome == outroproduto.Nome;
+            bool mesmopreco = this.Preco == outroproduto.Preco;
+
+            return mesmonome && mesmopreco;
+        }
+
+        public override int GetHashCode()
+        {
+            return Nome.Length; // forma rapida de agrupar um conjunto de dados
+        }
     }
-    
-    class ColecoesList
+        class ColecoesList
     {
         public static void Executar()
         {
