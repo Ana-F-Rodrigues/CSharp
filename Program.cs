@@ -71,6 +71,7 @@ namespace CursoCSharp
                 {"ColeçoesSet - Coleções",ColecoesSet.Executar},
                 {"Coleçoes Fila- Coleções",ColecoesQueue.Executar},
                 {"Igualdade - Coleções",Igualdade.Executar},
+                {"Stack - Coleções",ColecaoStack.Executar},
 
             });
 
