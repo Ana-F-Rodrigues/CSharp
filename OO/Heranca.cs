@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using static CursoCSharp.OO.Carro;
 
 namespace CursoCSharp.OO
@@ -12,7 +9,7 @@ namespace CursoCSharp.OO
         protected readonly int VelocidadeMaxima;
         int VelocidadeAtual;
 
-        public Carro( int velocidadeMaxima)
+        public Carro(int velocidadeMaxima)
         {
             VelocidadeMaxima = velocidadeMaxima;
         }
@@ -21,10 +18,11 @@ namespace CursoCSharp.OO
         {
             int novaVelocidade = VelocidadeAtual + delta;
 
-            if(novaVelocidade < 0)
+            if (novaVelocidade < 0)
             {
                 VelocidadeAtual = 0;
-            }else if (novaVelocidade > VelocidadeMaxima)
+            }
+            else if (novaVelocidade > VelocidadeMaxima)
             {
                 VelocidadeAtual = VelocidadeMaxima;
             }
@@ -46,7 +44,7 @@ namespace CursoCSharp.OO
             return AlterarVelocidade(-5);
         }
 
-        public class Uno : Carro 
+        public class Uno : Carro
         {
             public Uno() : base(200)
             {
@@ -54,8 +52,8 @@ namespace CursoCSharp.OO
             }
         }
 
-        public class Ferrari : Carro 
-        { 
+        public class Ferrari : Carro
+        {
             public Ferrari() : base(350)
             {
 
@@ -97,7 +95,7 @@ namespace CursoCSharp.OO
             Console.WriteLine(carro2.Frear());
 
             Console.WriteLine("Ferrari com tipo Carro..");
-            Carro carro3 = new Ferrari(); 
+            Carro carro3 = new Ferrari();
             Console.WriteLine(carro3.Acelerar());
             Console.WriteLine(carro3.Acelerar());
             Console.WriteLine(carro3.Frear());
