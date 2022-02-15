@@ -7,6 +7,7 @@ using CursoCSharp.EstruturasDeControle;
 using CursoCSharp.ClassesEMetodos;
 using CursoCSharp.Colecoes;
 using CursoCSharp.OO;
+using CursoCSharp.MetodosEFuncoes;
 
 namespace CursoCSharp
 
@@ -85,6 +86,9 @@ namespace CursoCSharp
                  {"Classe Abstract - OO",Abstract.Executar},
                  {"Interfaces- OO",Interface.Executar},
                  {"Sealed- OO",Sealed.Executar},
+                 
+                 //Metodos e Funçoes
+                 {"Exemplo Lambda- Metodos e Funçoes",ExemploLambda.Executar},
 
             });
 
