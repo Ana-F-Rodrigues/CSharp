@@ -36,7 +36,7 @@ namespace CursoCSharp.OO
             return VelocidadeAtual;
         }
 
-        public int Acelerar()
+        public virtual int Acelerar() // este metodo pode ser sobreEscrito
         {
             return AlterarVelocidade(5);
         }
@@ -59,6 +59,16 @@ namespace CursoCSharp.OO
             public Ferrari() : base(350)
             {
 
+            }
+            public override int Acelerar() // usado para sobreEscrever metodo
+            {
+                return AlterarVelocidade(15);
+            }
+
+            //Oculta o metodo da classe Pai
+            public new int Frear()
+            {
+                return AlterarVelocidade(-15);
             }
         }
 
@@ -86,7 +96,21 @@ namespace CursoCSharp.OO
             Console.WriteLine(carro2.Frear());
             Console.WriteLine(carro2.Frear());
 
+            Console.WriteLine("Ferrari com tipo Carro..");
+            Carro carro3 = new Ferrari(); 
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Frear());
+            Console.WriteLine(carro3.Frear());
+            Console.WriteLine(carro3.Frear());
 
+            Console.WriteLine("Uno com tipo Carro..");
+            carro3 = new Uno(); //POLIMORFISMO
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Frear());
+            Console.WriteLine(carro3.Frear());
+            Console.WriteLine(carro3.Frear());
         }
     }
 }
