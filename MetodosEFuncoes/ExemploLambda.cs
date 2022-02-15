@@ -26,6 +26,13 @@ namespace CursoCSharp.MetodosEFuncoes
             Console.WriteLine(jogarDado());
 
             Func<int, string> conversorHex = numero => numero.ToString("X");
+            Console.WriteLine(conversorHex(1234));
+
+            Func<int, int, int, string> formatarData = (dia, mes, ano) =>
+             String.Format("{0:D2}/{1:D2}/{2:D4}", dia, mes, ano);
+
+            Console.WriteLine(formatarData(1,1,2019));
+
         }
     }
 }
