@@ -81,7 +81,8 @@ namespace CursoCSharp
                  {"Herança- OO",Heranca.Executar},
                  {"Construtor This- OO",ConstrutorThis.Executar},
                  {"Encapsulamento - OO",OO.Encapsulamento.Executar},
-                 {"Polimorfismo - OO",OO.Polimorfismo.Executar},
+                 {"Polimorfismo - OO",Polimorfismo.Executar},
+                 {"Classe Abstract - OO",OO.Abstract.Executar},
 
             });
 
