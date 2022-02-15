@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CursoCSharp.MetodosEFuncoes
 {
-     class ExemploLambda
+    class ExemploLambda
     {
         public static void Executar()
         {
@@ -24,6 +24,8 @@ namespace CursoCSharp.MetodosEFuncoes
             };
 
             Console.WriteLine(jogarDado());
+
+            Func<int, string> conversorHex = numero => numero.ToString("X");
         }
     }
 }
