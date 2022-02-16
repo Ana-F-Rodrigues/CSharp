@@ -19,6 +19,17 @@ namespace CursoCSharp.Api
 
                 }
             }
+            try
+            {
+                using(StreamReader sr = new StreamReader(path))
+                {
+                    var texto = sr.ReadToEnd();
+                    Console.WriteLine(texto);
+                }
+            }catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
         }
     }
