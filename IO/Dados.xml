@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Desafio>
-  <Item>
+  <Item id="1">
     <Nome>Ana</Nome>
     <Descricao>Programadora Excelente</Descricao>
     <Categoria>C#</Categoria>
     <Observacao>Será minha melhor aluna</Observacao>
   </Item>
-  <Item>
+  <Item id ="2">
     <Nome>Joao</Nome>
     <Descricao>Joao se encontra confuso</Descricao>
     <Categoria>Vida</Categoria>
     <Observacao>Joao precisa de uma direção</Observacao>
   </Item>
-  <Item>
+  <Item id ="3">
     <Nome>Maria</Nome>
     <Descricao>Maria duvida de sua capacidade</Descricao>
     <Categoria>Emprego</Categoria>

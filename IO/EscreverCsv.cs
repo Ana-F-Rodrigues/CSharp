@@ -18,13 +18,22 @@ namespace CursoCSharp.IO
             StringBuilder sb = new StringBuilder();
             string delimiter = ",";
 
-            XDocument.Load(@"C:\Users\Ana\Desktop\PLANO 2022\CursoCSharp\IO\Dados.xml").Descendants("Desafio").ToList().ForEach(
-              element => 
-              sb.Append(element.Attribute("Item").Value + delimiter +
-                                    element.Element("Nome").Value + delimiter +
-                                    element.Element("Descrição").Value + delimiter +
-                                    element.Element("Categoria").Value + delimiter +
-                                    element.Element("Observação").Value + "\r\n"));
+            var desafio = XDocument.Load(@"C:\Users\Ana\Desktop\PLANO 2022\CursoCSharp\IO\Dados.xml").Descendants("Desafio").ToList();
+
+            foreach (XElement item in desafio.Nodes())
+            {
+                sb.Append(item.Attribute("id").Value);
+                sb.Append(delimiter);
+                sb.Append(item.Element("Nome").Value);
+                sb.Append(delimiter);
+                sb.Append(item.Element("Descricao").Value);
+                sb.Append(delimiter);
+                sb.Append(item.Element("Categoria").Value);
+                sb.Append(delimiter);
+                sb.AppendLine(item.Element("Observacao").Value
+                );
+            }
+        
 
             StreamWriter sw = new StreamWriter(@"C:\Users\Ana\Desktop\PLANO 2022\CursoCSharp\IO\Dados.csv");
             sw.WriteLine(sb.ToString());
