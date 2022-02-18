@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq;
 
 namespace CursoCSharp.TopicosAvancados
 {
@@ -28,12 +27,29 @@ namespace CursoCSharp.TopicosAvancados
 
             };
             Console.WriteLine("********* APROVADOS ******* ");
-            var aprovados = alunos.Where(a => a.Idade > 24);
+            var aprovados = alunos.Where(a => a.Nota >= 7).OrderBy(a => a.Nome);
             foreach(var aluno in aprovados)
             {
                 Console.WriteLine(aluno.Nome);
             }
-                
+
+            Console.WriteLine("\n**** Chamada ***");
+            var chamada = alunos.OrderBy(a => a.Nome).Select(a => a.Nome); 
+            foreach(var aluno in chamada)
+            {
+                Console.WriteLine(aluno);
+            }
+
+            Console.WriteLine("\n Aprovados (por Idade) *****");
+            var alunosAprovados = from aluno in alunos
+                                  where aluno.Nota >= 7
+                                  orderby aluno.Idade
+                                  select aluno.Nome;
+
+           foreach(var aluno in alunosAprovados)
+            {
+                Console.WriteLine(aluno);
+            }
 
         }
     }
