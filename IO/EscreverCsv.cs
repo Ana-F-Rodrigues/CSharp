@@ -33,7 +33,7 @@ namespace CursoCSharp.IO
                 sb.AppendLine(item.Element("Observacao").Value
                 );
             }
-        
+
 
             StreamWriter sw = new StreamWriter(@"C:\Users\Ana\Desktop\PLANO 2022\CursoCSharp\IO\Dados.csv");
             sw.WriteLine(sb.ToString());
@@ -41,6 +41,9 @@ namespace CursoCSharp.IO
 
         }
     }
+
+
+
 }
 
 // Namespace: System.IO

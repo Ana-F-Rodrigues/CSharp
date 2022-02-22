@@ -14,6 +14,13 @@ namespace CursoCSharp.IO
     {
         public static void Executar()
         {
+            var conversor = ConversorXML.MyXmlMapper.Map(@"C:\Users\Ana\Desktop\PLANO 2022\CursoCSharp\IO\Dados.xml");
+
+            Console.WriteLine(conversor.RootTag);
+        }
+
+        public static void ExecutarAntigo()
+        { 
             //XMLReader = fornece acesso somente de encaminhamento e somente leitura a dados XML
             //XMLReader.Create = cria uma instancia de XMLReader
             //IsStartElement = testa se a tag tem conteudo e se é tag de inicio ou vazia

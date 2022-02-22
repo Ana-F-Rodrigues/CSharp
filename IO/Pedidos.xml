@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pedidos>
+  <Pedido>
+    <Numero></Numero>
+    <Cliente>
+      <Nome></Nome>
+      <Telefone></Telefone>
+    </Cliente>
+    <Produtos>
+      <Produto>
+        <Descricao></Descricao>
+        <PrecoUnitario></PrecoUnitario>
+        <Quantidade></Quantidade>
+      </Produto>
+    </Produtos>
+  </Pedido>
+  <Pedido>
+    <Numero></Numero>
+    <Cliente>
+      <Nome></Nome>
+      <Telefone></Telefone>
+    </Cliente>
+    <Produtos>
+      <Produto>
+        <Descricao></Descricao>
+        <PrecoUnitario></PrecoUnitario>
+        <Quantidade></Quantidade>
+      </Produto>
+    </Produtos>
+  </Pedido>
+</Pedidos>
