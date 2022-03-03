@@ -15,7 +15,12 @@
       "ProjectGuid": "28475351-e590-4c48-b91d-7dc1b44906eb",
       "DisplayName": "Encapsulamento",
       "ColorIndex": 1
+    },
+    "3b34c3e3-2177-400e-913d-c5c5c835ef97": {
+      "ProjectGuid": "3b34c3e3-2177-400e-913d-c5c5c835ef97",
+      "DisplayName": "ConversorXML",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
