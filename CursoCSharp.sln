@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31919.166
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoCSharp", "CursoCSharp.csproj", "{A984B2CC-D7DD-4457-B707-2F8E0927BBEA}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulamento", "..\ClassLibrary1\Encapsulamento.csproj", "{28475351-E590-4C48-B91D-7DC1B44906EB}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversorXML", "ConversorXML\ConversorXML.csproj", "{3B34C3E3-2177-400E-913D-C5C5C835EF97}"
+>>>>>>> feature/poo
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,17 @@ Global
 		{A984B2CC-D7DD-4457-B707-2F8E0927BBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A984B2CC-D7DD-4457-B707-2F8E0927BBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A984B2CC-D7DD-4457-B707-2F8E0927BBEA}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{28475351-E590-4C48-B91D-7DC1B44906EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{28475351-E590-4C48-B91D-7DC1B44906EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28475351-E590-4C48-B91D-7DC1B44906EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28475351-E590-4C48-B91D-7DC1B44906EB}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{3B34C3E3-2177-400E-913D-C5C5C835EF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B34C3E3-2177-400E-913D-C5C5C835EF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B34C3E3-2177-400E-913D-C5C5C835EF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B34C3E3-2177-400E-913D-C5C5C835EF97}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> feature/poo
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

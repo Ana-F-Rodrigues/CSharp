@@ -6,7 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\ClassLibrary1\Encapsulamento.csproj" />
+=======
+    <PackageReference Include="CsvHelper" Version="27.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ConversorXML\ConversorXML.csproj" />
+>>>>>>> feature/poo
   </ItemGroup>
 
 </Project>

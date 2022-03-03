@@ -5,12 +5,17 @@ using CursoCSharp.Fundamentos;
 
 using CursoCSharp.EstruturasDeControle;
 using CursoCSharp.ClassesEMetodos;
+<<<<<<< HEAD
 using CursoCSharp.Colecoes;
 using CursoCSharp.OO;
 using CursoCSharp.MetodosEFuncoes;
 using CursoCSharp.Excecoes;
 using CursoCSharp.Api;
 using CursoCSharp.TopicosAvancados;
+=======
+using CursoCSharp.OrientacaoObjetos;
+using CursoCSharp.IO;
+>>>>>>> feature/poo
 
 namespace CursoCSharp
 
@@ -119,6 +124,13 @@ namespace CursoCSharp
                 {"Nullables - Topicos Avançados",Nullables.Executar},
                 {"Dynamics - Topicos Avançados",Dynamics.Executar},
                 {"Genericos - Topicos Avançados",Genericos.Executar},
+
+
+                //Orientação a Objeto
+                {"Digito Verificador - Orientação a Objetos",DigitoVerificador.Executar},
+                {"Leitor XML - Orientação a Objetos",LeitorXml.Executar},
+                {"Escrever CSV - Orientação a Objetos",EscreverCSV.Executar},
+               
 
 
             });
