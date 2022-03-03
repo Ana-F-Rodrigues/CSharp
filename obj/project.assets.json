@@ -10,6 +10,16 @@
         "runtime": {
           "lib/net5.0/CsvHelper.dll": {}
         }
+      },
+      "ConversorXML/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ConversorXML.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConversorXML.dll": {}
+        }
       }
     }
   },
@@ -37,10 +47,16 @@
         "lib/netstandard2.1/CsvHelper.dll",
         "lib/netstandard2.1/CsvHelper.xml"
       ]
+    },
+    "ConversorXML/1.0.0": {
+      "type": "project",
+      "path": "ConversorXML/ConversorXML.csproj",
+      "msbuildProject": "ConversorXML/ConversorXML.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ConversorXML >= 1.0.0",
       "CsvHelper >= 27.2.1"
     ]
   },
@@ -75,7 +91,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Ana\\Desktop\\PLANO 2022\\CursoCSharp\\ConversorXML\\ConversorXML.csproj": {
+              "projectPath": "C:\\Users\\Ana\\Desktop\\PLANO 2022\\CursoCSharp\\ConversorXML\\ConversorXML.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
