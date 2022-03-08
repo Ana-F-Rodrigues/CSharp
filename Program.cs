@@ -7,6 +7,7 @@ using CursoCSharp.EstruturasDeControle;
 using CursoCSharp.ClassesEMetodos;
 using CursoCSharp.OrientacaoObjetos;
 using CursoCSharp.IO;
+using ConversorXML;
 
 namespace CursoCSharp
 {
@@ -14,6 +15,12 @@ namespace CursoCSharp
     {
         static void Main(string[] args)
         {
+            //var writer = new MyXmlToCsvWriter(MyXmlMapper.Map(@"C:\Users\wilso\source\repos\zup\anaflavia\CSharp\IO\Pedidos.xml"));
+
+            //writer.WriteCsvFile(@"C:\Users\wilso\source\repos\zup\anaflavia\CSharp\IO\Pedidos.csv");
+
+            //return;
+
             var central = new CentralDeExercicios(new Dictionary<string, Action>() 
             {
                  //Fundamentos

@@ -6,11 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MyConversorXML\**" />
+    <EmbeddedResource Remove="MyConversorXML\**" />
+    <None Remove="MyConversorXML\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CsvHelper" Version="27.2.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="ConversorXML\ConversorXML.csproj" />
+    <ProjectReference Include="MyConversorXML\MyConversorXML.csproj" />
   </ItemGroup>
 
 </Project>

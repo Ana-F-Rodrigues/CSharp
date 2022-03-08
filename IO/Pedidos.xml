@@ -1,30 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Pedidos>
   <Pedido>
-    <Numero></Numero>
-    <Cliente>
-      <Nome></Nome>
-      <Telefone></Telefone>
-    </Cliente>
-    <Produtos>
-      <Produto>
-        <Descricao></Descricao>
-        <PrecoUnitario></PrecoUnitario>
-        <Quantidade></Quantidade>
-      </Produto>
-    </Produtos>
+    <Numero>0001</Numero>
+    <Cliente>Jose</Cliente>
+    <Produtos>Produto 1</Produtos>
+    <ValorTotal>R$ 45,00</ValorTotal>
   </Pedido>
   <Pedido>
-    <Numero></Numero>
+    <Numero>0002</Numero>
     <Cliente>
-      <Nome></Nome>
-      <Telefone></Telefone>
+      <Nome>Maria</Nome>
+      <Telefone>3155559999</Telefone>
     </Cliente>
     <Produtos>
       <Produto>
-        <Descricao></Descricao>
-        <PrecoUnitario></PrecoUnitario>
-        <Quantidade></Quantidade>
+        <Descricao>Produto 2</Descricao>
+        <PrecoUnitario>R$ 35,00</PrecoUnitario>
+        <Quantidade>2</Quantidade>
       </Produto>
     </Produtos>
   </Pedido>

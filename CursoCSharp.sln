@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoCSharp", "CursoCSharp.csproj", "{A984B2CC-D7DD-4457-B707-2F8E0927BBEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversorXML", "ConversorXML\ConversorXML.csproj", "{3B34C3E3-2177-400E-913D-C5C5C835EF97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyConversorXML", "MyConversorXML\MyConversorXML.csproj", "{A4F1C3FF-6B18-484F-B2FB-9C7F985ED438}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{A984B2CC-D7DD-4457-B707-2F8E0927BBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A984B2CC-D7DD-4457-B707-2F8E0927BBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A984B2CC-D7DD-4457-B707-2F8E0927BBEA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B34C3E3-2177-400E-913D-C5C5C835EF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B34C3E3-2177-400E-913D-C5C5C835EF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B34C3E3-2177-400E-913D-C5C5C835EF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B34C3E3-2177-400E-913D-C5C5C835EF97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4F1C3FF-6B18-484F-B2FB-9C7F985ED438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F1C3FF-6B18-484F-B2FB-9C7F985ED438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F1C3FF-6B18-484F-B2FB-9C7F985ED438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F1C3FF-6B18-484F-B2FB-9C7F985ED438}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
