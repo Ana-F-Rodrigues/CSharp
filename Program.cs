@@ -11,6 +11,8 @@ using CursoCSharp.MetodosEFuncoes;
 using CursoCSharp.Excecoes;
 using CursoCSharp.Api;
 using CursoCSharp.TopicosAvancados;
+using CursoCSharp.OrientacaoObjetos;
+using CursoCSharp.IO;
 
 namespace CursoCSharp
 
@@ -19,6 +21,12 @@ namespace CursoCSharp
     {
         static void Main(string[] args)
         {
+            //var writer = new MyXmlToCsvWriter(MyXmlMapper.Map(@"C:\Users\wilso\source\repos\zup\anaflavia\CSharp\IO\Pedidos.xml"));
+
+            //writer.WriteCsvFile(@"C:\Users\wilso\source\repos\zup\anaflavia\CSharp\IO\Pedidos.csv");
+
+            //return;
+
             var central = new CentralDeExercicios(new Dictionary<string, Action>() 
             {
                  //Fundamentos
@@ -119,6 +127,13 @@ namespace CursoCSharp
                 {"Nullables - Topicos Avançados",Nullables.Executar},
                 {"Dynamics - Topicos Avançados",Dynamics.Executar},
                 {"Genericos - Topicos Avançados",Genericos.Executar},
+
+
+                //Orientação a Objeto
+                {"Digito Verificador - Orientação a Objetos",DigitoVerificador.Executar},
+                {"Leitor XML - Orientação a Objetos",LeitorXml.Executar},
+                {"Escrever CSV - Orientação a Objetos",EscreverCSV.Executar},
+               
 
 
             });
